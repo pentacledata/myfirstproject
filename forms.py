@@ -87,4 +87,24 @@ class PatientDetails(forms.Form):
                                              'placeholder':
                                                  'Mobile Number'}),
                                       max_length=60)
+    
+    class DocumentDetails(forms.Form):
+
+    patient_name = forms.CharField(label='Patient Name',
+                                      required=True,
+                                      widget=forms.TextInput(
+                                         attrs={
+                                             'size': '30',
+                                             'placeholder':
+                                                 'Patient Name'}),
+                                      max_length=60)
+
+    mobile = forms.CharField(label='Mobile Number',
+                                      required=True,
+                                      widget=forms.TextInput(
+                                         attrs={
+                                             'size': '30',
+                                             'placeholder':
+                                                 'Mobile Number'}),
+                                      max_length=60)
 
